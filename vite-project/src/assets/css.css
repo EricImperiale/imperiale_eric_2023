@@ -1,0 +1,18 @@
+nav a {
+    color: white !important;
+}
+.card button,
+.btn-success,
+.btn-primary {
+    background-color: #9333EA !important;
+    border: none !important;
+}
+
+.btn-add,
+.btn-edit {
+    color: white !important;
+}
+.link-carrito span {
+    font-size: .8em !important;
+    padding: 1px 7px;
+}

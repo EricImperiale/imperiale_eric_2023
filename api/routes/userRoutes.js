@@ -1,0 +1,17 @@
+const express = require("express"); 
+
+const router = express.Router(); 
+
+const userController = require("../controllers/userController"); 
+
+const validateJSONWebToken = require('../middlewares/validateJSONWebToken');
+
+router.get("/profile", validateJSONWebToken, userController.getUserById);
+
+router.post("/register", userController.registerUser);
+
+router.post("/login", userController.loginUser);
+
+router.delete("/logout", userController.logoutUser);
+
+module.exports = router;
